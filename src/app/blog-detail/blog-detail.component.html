@@ -1,0 +1,9 @@
+<div *ngIf="blog != undefined && blog.id != undefined">
+    <div class="detail-container">
+        <div class="title">
+            <h5>{{blog.title}}</h5>
+            <a class="btn btn-primary" [routerLink]="['blog/edit/', blog.id]">Edit</a>
+        </div>
+        <p>{{blog.text}}</p>
+    </div>
+</div>

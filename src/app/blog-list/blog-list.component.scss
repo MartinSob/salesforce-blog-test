@@ -1,0 +1,19 @@
+.list-group {
+    li {
+        border: none;
+        background-color: rgb(245, 245, 245);
+
+        button {
+            color: rgb(109, 109, 109);
+        }
+    }
+}
+
+.remove-link {
+    text-align: right;
+    padding: 0;
+    
+    button.btn.btn-link {
+        color: darkred;
+    }
+}

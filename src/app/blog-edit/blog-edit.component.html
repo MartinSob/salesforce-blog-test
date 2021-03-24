@@ -1,0 +1,14 @@
+<div class="edit-container mt-3">
+    <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+        <div class="mb-3">
+            <label for="title" class="form-label">Title</label>
+            <input type="text" class="form-control" id="title" formControlName="title">
+        </div>
+        <div class="mb-3">
+            <label for="text" class="form-label">Text</label>
+            <input type="text" class="form-control" id="text" formControlName="text">
+        </div>
+        <button class="btn btn-primary" type="submit">Save</button>
+        <button class="btn btn-danger mx-1" *ngIf="isEdit" (click)="onDelete()">Delete</button>
+    </form>
+</div>

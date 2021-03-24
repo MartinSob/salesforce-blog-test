@@ -1,0 +1,17 @@
+<div class="container-fluid">
+    <div class="row mt-3">
+        <div class="col col-md-3">
+            <ul class="list-group">
+                <li class="list-group-item" *ngFor="let blog of blogs">
+                    <button (click)="blogDetail(blog)" class="btn btn-link">{{blog.title}}</button>
+                </li>
+                <li class="list-group-item remove-link">
+                    <button (click)="removeBlogs()" class="btn btn-link">Remove all</button>
+                </li>
+            </ul>
+        </div>
+        <div class="col col-md-9">
+            <app-blog-detail [blog]='selectedBlog'></app-blog-detail>
+        </div>
+    </div>
+</div>
